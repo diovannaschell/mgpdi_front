@@ -29,6 +29,17 @@
     display: flex;
 }
 
+.center{
+    width: 100%!important;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn-verde{
+    background-color: #06A765;
+    border-radius: unset;
+}
 /*========================== CSS BUSCA ===================*/
 header{
     background-color: #212121;
