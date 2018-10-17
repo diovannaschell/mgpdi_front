@@ -1,0 +1,170 @@
+/*========================== CSS GERAL ===================*/
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('Gotham-Font/GothamBook.ttf');
+}
+
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url('Gotham-Font/GothamMedium.ttf');
+}
+
+@font-face {
+    font-family: 'Gotham Light';
+    src: url('Gotham-Font/Gotham-Light.otf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gotham Book';
+}
+
+.font-white{
+    color: white;
+}
+
+.flex{
+    display: flex;
+}
+
+/*========================== CSS BUSCA ===================*/
+header{
+    background-color: #212121;
+    width: 100%;
+    height: 40px;
+}
+
+#busca{
+    height: 18px;
+    color: white;
+    padding: 2px;
+}
+
+.btn-busca{
+    margin-top: 2px;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.form-header{
+    margin-top: 9px;
+    margin-bottom: 0;
+}
+
+#flag{
+    height: 25px;
+    width: 35px;
+    margin-top: 9px;
+}
+.linguagem{
+    cursor: pointer;
+    padding: 0!important;
+}
+
+#menuLinguas{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+#menuLinguas>ul{
+    background-color: white;
+    padding: 15px 0;
+    border: solid 1px #ededed;
+    cursor: pointer;
+}
+
+#menuLinguas>ul li{
+    border-bottom: solid 1px #ededed;
+    width: 100%;
+    padding: 3px 15px;
+}
+
+#menuLinguas>ul li:hover{
+    background-color: #ededed;
+}
+
+.btn-close{
+    text-align: right;
+    padding: 10px;
+    cursor:pointer;
+}
+/*========================== CSS NAVBAR ===================*/
+.dropdown-content{
+    top: 20px!important;
+}
+
+nav{
+    background-color: white;
+}
+nav ul a{
+    color: #393939;
+    transition: all .3s;
+}
+nav ul a:hover{
+    background-color: #06908a;
+    color: white;
+    transition: all .3s;
+}
+
+/*========================== CSS SIDEBAR ===================*/
+#content_biblioteca, #content_profissionais{
+display: none;
+background-color: #f2f2f2;
+border-left: solid 4px green;
+}
+.sidenav li > a > i, .sidenav li > a > [class^="mdi-"], .sidenav li > a li > a > [class*="mdi-"], .sidenav li > a > i.material-icons{
+float:right;
+margin: 0;
+}
+
+/*========================== CSS BANNER ===================*/
+#banner{
+    background-image: url('imagens/banner.jpg');
+    width: 100%;
+    height: 240px;
+    background-size: cover;
+    background-position: 0 40%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner>p{
+    font-family: 'Gotham Medium'!important;
+    font-size: 36px;
+    text-align: center;
+}
+/*========================== FIM CSS BANNER ===================*/
+
+/*========================== CSS HOME ===================*/
+#home{
+    display: flex;
+    justify-content: center;
+}
+
+.content-home{
+    border: solid 3px #02902e;
+    padding: 40px!important;
+    text-align: justify;
+    margin-top: 70px;
+}
+
+.content-home>p{
+    line-height: 20pt;
+}
+
+.title-border-div{
+    background-color: #fff;
+    position: absolute;
+    margin-top: 45px;
+    font-size: 35px;
+    color: #02902e;
+    padding: 0 20px;
+}
+/*========================== FIM CSS HOME ===================*/

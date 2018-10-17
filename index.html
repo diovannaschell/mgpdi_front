@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MGPDI</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- icones -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- INICIO HEADER -->
+    <header>
+        <div class="row">
+            <div class="col s12">
+                <form class="col s10 m9 l11">
+                    <div class="input-field col s9 m5 l3 offset-l8 form-header">
+                        <input id="busca" type="text" class="validate" placeholder="Digite sua busca...">
+                    </div>
+                    <button class="btn waves-effect waves-light btn-busca" type="submit" name="action">
+                        <i class="material-icons">search</i>
+                    </button>
+                </form>
+                <div class="linguagem col s2 m3 l1 flex">
+                    <div id="flag">
+                        <img src="imagens/brasil.png" height="25">
+                    </div>
+                    <i class="material-icons" style="color:white; margin-top: 10px">arrow_drop_down</i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="menuLinguas">
+        <ul>
+            <li id="brasil"><img src="imagens/brasil.png" height="25">Português (BR)</li>
+            <li id="espanha"><img src="imagens/espanha.png" height="25">Espanhol (ES)</li>
+        </ul>
+    </div>
+    <!-- FIM HEADER -->
+
+    <!-- INICIO NAVBAR -->
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">COMUNICADOS</a></li>
+        <li><a href="#!">APRESENTAÇÕES</a></li>
+        <li><a href="#!">ARTIGOS</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href="#!">EQUIPE TÉCNICA DO MODELO</a></li>
+        <li><a href="#!">AVALIADORES</a></li>
+        <li><a href="#!">IMPLEMENTADORES</a></li>
+        <li><a href="#!">INSTRUTORES</a></li>
+        <li><a href="#!">APROVADOS C1/P1</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo"><img src="imagens/logoMGPDI.png" height="80"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" style="color: black">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html">MGPDI</a></li>
+                <li><a href="collapsible.html">AVALIAÇÕES</a></li>
+                <li><a href="badges.html">GUIAS</a></li>
+                <li><a href="mobile.html">AGENDA</a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">BIBLIOTECA<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">PROFISSIONAIS<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- FIM NAVBAR -->
+
+    <!-- INICIO SIDEBAR RESPONSIVO -->
+    <ul class="sidenav" id="mobile-demo">
+        <li id="close" class="btn-close"><i class="material-icons">close</i></li>
+        <li><a href="sass.html">MGPDI</a></li>
+        <li><a href="badges.html">AVALIAÇÕES</a></li>
+        <li><a href="collapsible.html">GUIAS</a></li>
+        <li><a href="mobile.html">AGENDA</a></li>
+        <li><a id="biblioteca">BIBLIOTECA <i class="material-icons">arrow_drop_down</i></a></li>
+        <li id="content_biblioteca">
+            <div class="s12">
+                <ul>
+                    <li><a href="#!">Comunicados</a></li>
+                    <li><a href="#!">Apresentações</a></li>
+                    <li><a href="#!">Artigos</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a id="profissionais">PROFISSIONAIS <i class="material-icons">arrow_drop_down</i></a></li>
+        <li id="content_profissionais">
+            <div class="s12">
+                <ul>
+                    <li><a href="#!">Equipe técnica do modelo</a></li>
+                    <li><a href="#!">Avaliadores</a></li>
+                    <li><a href="#!">Implementadores</a></li>
+                    <li><a href="#!">Instrutores</a></li>
+                    <li><a href="#!">Aprovados C1/P1</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <!-- FIM SIDEBAR RESPONSIVO -->
+
+    <!-- INICIO BANNER -->
+    <section id="banner">
+        <p class="font-white">Modelo de gestão pesquisa, desenvolvimento e inovação</p>
+    </section>
+    <!-- FIM BANNER -->
+
+    <!-- INICIO HOME -->
+    <section id="home">
+        <p class="title-border-div">MGPDI</p>
+        <div class="row">
+            <div class="col s12 m10 l8 offset-m1 offset-l2 content-home">
+                <p> &nbsp&nbsp&nbsp	O Modelo de Gestão de Pesquisa, Desenvolvimento e Inovação, MGPDI, foi desenvolvida pela SOFTSUL em 2008,  inicialmente como uma metodologia, com recursos FINEP e contou com a participação de uma equipe multidisciplinar (universidades, centros de pesquisa e instituições) na sua definição.
+                    <br>
+                    &nbsp&nbsp&nbsp Baseia-se em processos definidos nos modelos internacionais de inovação buscando atender a necessidade de implantar nas empresas os princípios da inovação, de forma adequada ao contexto das empresas brasileiras e estando em consonância com as principais abordagens para definição, avaliação e gestão de produtos e serviços inovadores. Foi desenhada em concordância com a Lei de inovação e de modelos de análise de melhores práticas (MPSBR, TRIZ, CMMI, OSLO, PMI, RBS).</p>
+            </div>
+        </div>
+    </section>
+    <!-- FIM HOME -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
