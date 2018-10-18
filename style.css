@@ -46,14 +46,41 @@ h2{
     line-height: 60px;
     display: inline-flex;
     margin-bottom: 50px;
+    color: #069D8A;
 }
-h2::before{
+h4{
+    font-size: 24px;
+    color: white;
+    font-family: 'Gotham Medium';
+    margin-bottom: 20px;
+}
+.title-green::before{
+    content: "";
+    height: 60px;
+    width: 3px;
+    margin-right: 15px;
+    background-color: #069D8A;
+    display: inline-block;
+}
+.title-white{
+    color: white;
+}
+.title-white::before{
     content: "";
     height: 60px;
     width: 3px;
     margin-right: 15px;
     background-color: #fff;
     display: inline-block;
+}
+.grey{
+    color: #e5e5e5;
+    font-family: 'Gotham Book';
+    background-color: transparent!important;
+    font-size: 17px;
+}
+.text-center{
+    text-align: center;
 }
 /*========================== CSS BUSCA ===================*/
 header{
@@ -205,3 +232,47 @@ margin: 0;
     background-color: #ddd;
 }
 /*========================== FIM CSS DUVIDAS FREQUENTES ===================*/
+
+/*========================== INICIO GUIAS ===================*/
+.guia{
+    width: 100%;
+    padding: 40px;
+    position: relative;
+    cursor:pointer;
+    height: 310px;
+    margin-bottom: 40px;
+}
+
+.guia-turquesa{
+    background-color: #06A765;
+}
+.guia-azul{
+    background-color: #069D8A;
+}
+.guia-verde{
+    background-color: #02902E;
+}
+a{
+    text-align: center;
+}
+.bottom-guia{
+    bottom: 0;
+    position: absolute;
+    height: 60px;
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+.bottom-guia:hover{
+    background-color: rgba(0,0,0,0.5);
+    transition: all 0.3s;
+}
+.link-guia{
+    color: #ededed;
+    width: 100%;
+}
+/*========================== FIM GUIAS ===================*/
