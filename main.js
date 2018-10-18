@@ -43,3 +43,7 @@ $("#espanha").on('click', function () {
 $("#close").on('click', function () {
     $('.sidenav').sidenav();
 });
+
+$(document).ready(function(){
+    $('.collapsible').collapsible();
+});

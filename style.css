@@ -40,6 +40,21 @@
     background-color: #06A765;
     border-radius: unset;
 }
+
+h2{
+    font-size: 30px;
+    line-height: 60px;
+    display: inline-flex;
+    margin-bottom: 50px;
+}
+h2::before{
+    content: "";
+    height: 60px;
+    width: 3px;
+    margin-right: 15px;
+    background-color: #fff;
+    display: inline-block;
+}
 /*========================== CSS BUSCA ===================*/
 header{
     background-color: #212121;
@@ -157,6 +172,7 @@ margin: 0;
 #home{
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .content-home{
@@ -179,3 +195,13 @@ margin: 0;
     padding: 0 20px;
 }
 /*========================== FIM CSS HOME ===================*/
+
+/*========================== INICIO CSS DUVIDAS FREQUENTES ===================*/
+#duvidas_frequentes{
+    background-color: #069D8A;
+    padding-bottom: 40px;
+}
+.collapsible-body{
+    background-color: #ddd;
+}
+/*========================== FIM CSS DUVIDAS FREQUENTES ===================*/
